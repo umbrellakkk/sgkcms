@@ -1,0 +1,735 @@
+/*====================================
+=            button style    www.bootstrapmb.com        =
+====================================*/
+.temp-form-button {
+  background-color: #0193B7;
+  border: 0 !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  position: relative;
+  transform: perspective(1px) translateZ(0px);
+  transition-duration: 0.3s;
+  transition-property: color;
+  box-shadow: 1px 3px 6px #bababa;
+}
+.temp-form-button:hover {
+  background-color: #0193B7;
+}
+.temp-form-button:before {
+  background: #086F96;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 0 0;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+.temp-form-button:hover:before {
+  transform: scaleY(1);
+}
+
+/*=====  End of button style  ======*/
+/*=====================================
+=            input styling            =
+=====================================*/
+.temp-span-wrap {
+  display: inline-block;
+  margin: 9px 0;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  z-index: 1;
+}
+.temp-span-wrap .temp_input_field {
+  border: medium none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  color: #000;
+  display: block;
+  float: right;
+  -webkit-font-size: 16px;
+  -moz-font-size: 16px;
+  -ms-font-size: 16px;
+  font-size: 16px;
+  padding-left: 0;
+  position: relative;
+  width: 100%;
+  padding: 0.4em 0.25em;
+  width: 100%;
+  background: transparent;
+}
+.temp-span-wrap .temp_input_field.temp_textarea_field {
+  height: 100px;
+}
+.temp-span-wrap .temp_input_field:focus {
+  outline: none;
+}
+.temp-span-wrap .temp_input_field:focus + .temp_input_label .temp_input_label-content {
+  -webkit-transform: translate3d(0, -90%, 0);
+  -moz-transform: translate3d(0, -90%, 0);
+  -ms-transform: translate3d(0, -90%, 0);
+  transform: translate3d(0, -90%, 0);
+}
+.temp-span-wrap .temp_input_field:focus + .temp_input_label:before {
+  -webkit-transform: translate3d(0, -0.5em, 0);
+  -moz-transform: translate3d(0, -0.5em, 0);
+  -ms-transform: translate3d(0, -0.5em, 0);
+  transform: translate3d(0, -0.5em, 0);
+}
+.temp-span-wrap .temp_input_label {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  pointer-events: none;
+  -moz-user-select: none;
+  color: #6a7989;
+  display: inline-block;
+  float: right;
+  -webkit-font-size: 70.25%;
+  -moz-font-size: 70.25%;
+  -ms-font-size: 70.25%;
+  font-size: 70.25%;
+  font-weight: bold;
+}
+.temp-span-wrap .temp_input_label:after {
+  bottom: 0;
+  background: #0193B7;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: transform 0.3s ease 0s;
+  width: 100%;
+  z-index: -1;
+}
+.temp-span-wrap .temp_input_label.temp-textarea-label:after {
+  bottom: -60px;
+}
+.temp-span-wrap .temp_input_label .temp_input_label-content {
+  color: #086F96;
+  display: block;
+  -webkit-font-size: 12px;
+  -moz-font-size: 12px;
+  -ms-font-size: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  position: relative;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+.temp-span-wrap.input--filled .temp_input_label .temp_input_label-content {
+  -webkit-transform: translate3d(0, -90%, 0);
+  -moz-transform: translate3d(0, -90%, 0);
+  -ms-transform: translate3d(0, -90%, 0);
+  transform: translate3d(0, -90%, 0);
+}
+.temp-span-wrap.input--filled .temp_input_label:before {
+  -webkit-transform: translate3d(0, -0.5em, 0);
+  -moz-transform: translate3d(0, -0.5em, 0);
+  -ms-transform: translate3d(0, -0.5em, 0);
+  transform: translate3d(0, -0.5em, 0);
+}
+
+/*=====  End of input styling  ======*/
+/*========================================
+=            checkbox styling            =
+========================================*/
+.temp-checkbox-wrap {
+  -webkit-font-size: 12px;
+  -moz-font-size: 12px;
+  -ms-font-size: 12px;
+  font-size: 12px;
+  position: relative;
+  margin-left: 15px;
+  color: #0193B7;
+}
+.temp-checkbox-wrap input {
+  content: "";
+  left: -17px;
+  position: absolute;
+  top: -5px;
+  visibility: hidden;
+}
+.temp-checkbox-wrap input:checked ~ .checkmark {
+  background-color: #086F96;
+}
+.temp-checkbox-wrap input:checked ~ .checkmark:after {
+  display: block;
+}
+.temp-checkbox-wrap .checkmark {
+  background: #0193B7;
+  height: 16px;
+  left: -24px;
+  position: absolute;
+  top: 0px;
+  width: 16px;
+}
+.temp-checkbox-wrap .checkmark:after {
+  border-color: #bababa;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  content: "";
+  height: 12px;
+  left: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 6px;
+  border-color: #fff;
+  display: none;
+}
+
+/*=====  End of checkbox styling  ======*/
+/*====================================
+=            radio-button            =
+====================================*/
+.temp-custom-radio-button {
+  padding-left: 23px;
+  position: relative;
+  font-family: 16px;
+}
+.temp-custom-radio-button input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.temp-custom-radio-button input:checked ~ .temp-radio-checkmark {
+  background-color: #0193B7;
+}
+.temp-custom-radio-button input:checked ~ .temp-radio-checkmark:after {
+  display: block;
+}
+.temp-custom-radio-button .temp-radio-checkmark {
+  background-color: #086F96;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+.temp-custom-radio-button .temp-radio-checkmark:after {
+  background: white none repeat scroll 0 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  content: "";
+  display: none;
+  height: 8px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  width: 8px;
+}
+
+/*=====  End of radio-button  ======*/
+/*==============================
+=            select            =
+==============================*/
+.temp-custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid #0193B7 !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  color: #086F96;
+  -webkit-font-size: 12px;
+  -moz-font-size: 12px;
+  -ms-font-size: 12px;
+  font-size: 12px;
+  text-align: left !important;
+  padding-left: 0 !important;
+  position: relative;
+  outline: none !important;
+}
+.temp-custom-select:focus {
+  outline: none !important;
+}
+
+/*=====  End of select  ======*/
+/*====================================
+=            common style            =
+====================================*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  outline: 0 !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.custom-row {
+  display: flex;
+}
+
+/*=====  End of common style  ======*/
+.temp-popup-form-wrapper {
+  background-image: url("assets/images/banner1.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  /*================================================
+  =            style of setting section            =
+  ================================================*/
+  /*=====  End of style of setting section  ======*/
+  /*===========================================
+  =            naviigation section            =
+  ===========================================*/
+}
+.temp-popup-form-wrapper .temp-content-wrapper {
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+}
+.temp-popup-form-wrapper .temp-content-wrapper h1 {
+  color: #fff;
+  font-weight: 600;
+  -webkit-font-size: 40px;
+  -moz-font-size: 40px;
+  -ms-font-size: 40px;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #6d6d6d;
+  display: inline-block;
+}
+.temp-popup-form-wrapper .temp-content-wrapper p {
+  -webkit-font-size: 20px;
+  -moz-font-size: 20px;
+  -ms-font-size: 20px;
+  font-size: 20px;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap {
+  background-color: #fff;
+  color: #000;
+  content: "";
+  left: -230px;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  transition: all 0.3s linear 0s;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 230px;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap.active {
+  left: 0 !important;
+  transition: 0.3s linear all;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -1px;
+  width: 40px;
+  border: 2px solid #0193B7;
+  cursor: pointer;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper {
+  height: 330px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-font-family .temp-main-font-family-list {
+  padding: 0;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-font-family .temp-main-font-family-list .temp-font-menu {
+  border: 1px solid #0193B7;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px;
+  position: relative;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-font-family .temp-main-font-family-list .temp-font-menu #temp-font-menu {
+  margin: 0;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-font-family .temp-main-font-family-list .temp-font-menu .temp-icon {
+  -webkit-font-size: 20px;
+  -moz-font-size: 20px;
+  -ms-font-size: 20px;
+  font-size: 20px;
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-font-family .temp-main-font-family-list .temp-font-menu .temp-font-submenu-list {
+  background-color: #bc438b;
+  display: none;
+  font-weight: normal;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  z-index: 9999;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-font-family .temp-main-font-family-list .temp-font-menu .temp-font-submenu-list li:hover {
+  background-color: #0193B7;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-font-family .temp-main-font-family-list .temp-font-menu .temp-font-submenu-list li.hide_class {
+  display: none;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-font-family .temp-main-font-family-list .temp-font-menu .temp-font-submenu-list li a {
+  color: #fff;
+  padding: 7px;
+  display: block;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting {
+  width: 250px;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting input {
+  display: inline-block;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting .temp-custom-radio-button {
+  display: inline;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting .temp-color-box-wrap {
+  display: inline-flex;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting .temp-color-box-wrap .temp-color-box {
+  height: 20px;
+  margin: 10px;
+  width: 20px;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting .temp-color-box-wrap .temp-color-box.color1 {
+  background-color: #2E3353;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting .temp-color-box-wrap .temp-color-box.color2 {
+  background-color: #889cb7;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting .temp-color-box-wrap .temp-color-box.color3 {
+  background-color: #2d5c67;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting .temp-color-box-wrap .temp-color-box.color4 {
+  background-color: #75B0C2;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting .temp-color-box-wrap .temp-color-box.color5 {
+  background-color: #AB7B39;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-color-setting .temp-color-box-wrap .temp-color-box.color6 {
+  background-color: #C9BA9D;
+}
+.temp-popup-form-wrapper .temp-change-setting-wrap .temp-setting-wrapper .temp-background-image-setting .temp-custom-radio-button {
+  margin-top: 7px;
+  display: inline;
+}
+.temp-popup-form-wrapper .temp-custom-navigation {
+  background-color: #0193B7;
+  border: 0 !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  z-index: 9;
+  /*=====  End of naviigation section  ======*/
+}
+.temp-popup-form-wrapper .temp-custom-navigation .temp-custom-list-items li a {
+  color: #fff !important;
+  transition: 0.3s linear all;
+}
+.temp-popup-form-wrapper .temp-custom-navigation .temp-custom-list-items li a:hover {
+  background-color: #086F96;
+  transition: 0.3s linear all;
+}
+.temp-popup-form-wrapper .temp-custom-navigation .temp-custom-logo-header a {
+  color: #fff !important;
+  -webkit-font-size: 21px;
+  -moz-font-size: 21px;
+  -ms-font-size: 21px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/*====================================
+=            form styling            =
+====================================*/
+.temp-custom-modal-wrap {
+  margin: 5px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content {
+  position: relative;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-close-button {
+  background: #fff none repeat scroll 0 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-font-size: 21px;
+  -moz-font-size: 21px;
+  -ms-font-size: 21px;
+  font-size: 21px;
+  height: 22px;
+  opacity: 1;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 22px;
+  z-index: 9;
+  box-shadow: 2px 2px 4px #000;
+  line-height: 22px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper {
+  margin-top: 0px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap {
+  padding-top: 20px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap h2 {
+  margin-bottom: 30px;
+  color: #0193B7;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap .custom-form-label2 a {
+  -webkit-font-size: 12px;
+  -moz-font-size: 12px;
+  -ms-font-size: 12px;
+  font-size: 12px;
+  color: #0193B7;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap .temp-login-button-wrap {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap img {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap .temp-custom-select {
+  margin-bottom: 25px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap.temp-subscribe-form-column-wrap .temp-radio-button-subscribe {
+  color: #0193B7;
+  -webkit-font-size: 13px;
+  -moz-font-size: 13px;
+  -ms-font-size: 13px;
+  font-size: 13px;
+  margin-bottom: 6px;
+  margin-left: 12px !important;
+  margin-top: 6px;
+  padding-left: 10px;
+  display: block;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap.temp-subscribe-form-column-wrap .temp-radio-button-subscribe .temp-radio-checkmark {
+  left: -15px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap.temp-subscribe-form-column-wrap .temp-subscribe-checkbox {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 17px;
+  margin-top: 13px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image {
+  background-image: url("assets/images/banner1.jpg");
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-forget-password-column-wrap-image h2 {
+  -webkit-font-size: 40px;
+  -moz-font-size: 40px;
+  -ms-font-size: 40px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image:after {
+  background: #0193B7;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.86;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper {
+  z-index: 99;
+  position: relative;
+  color: #fff;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper h2 {
+  -webkit-font-size: 45px;
+  -moz-font-size: 45px;
+  -ms-font-size: 45px;
+  font-size: 45px;
+  text-transform: capitalize;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper p {
+  margin-top: 25px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper p.temp-reg-para {
+  margin-top: 45px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap.temp-reg-anchor-wrap {
+  margin-top: 27px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-anchor {
+  border: 2px solid #42B0E5;
+  color: #fff;
+  display: block;
+  padding: 8px 20px 8px 0;
+  transition: all 0.3s linear 0s;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-anchor:hover {
+  background-color: #47a6db;
+  transition: 0.3s linear all;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-anchor:focus {
+  text-decoration: none;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-anchor .temp-social-icon-wrap {
+  background: #42b0e5 none repeat scroll 0 0;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 10px 13px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-anchor span {
+  -webkit-font-size: 13px;
+  -moz-font-size: 13px;
+  -ms-font-size: 13px;
+  font-size: 13px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-icon-color {
+  border: 2px solid #42B0E5;
+  margin-top: 10px;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-icon-color:hover {
+  background-color: #47A6DB;
+}
+.temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper .temp-anchor-wrap .temp-icon-color .temp-social-icon-wrap {
+  background-color: #42B0E5;
+  padding: 10px 12px;
+}
+
+.changed-one:after {
+  background-color: #2E3353 !important;
+}
+
+.changed-two:after {
+  background-color: #2D5C67 !important;
+}
+
+.changed-three:after {
+  background-color: #AB7B39 !important;
+}
+
+.changed-one-btn:before {
+  background-color: #889CB7 !important;
+}
+
+.changed-two-btn:before {
+  background-color: #75B0C2 !important;
+}
+
+.changed-three-btn:before {
+  background-color: #C9BA9D !important;
+}
+
+/*=====  End of form styling  ======*/
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  /*===========================================
+  =            naviigation section            =
+  ===========================================*/
+  .temp-custom-navigation .temp-custom-list-items li a {
+    -webkit-font-size: 12px;
+    -moz-font-size: 12px;
+    -ms-font-size: 12px;
+    font-size: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  /*=====  End of naviigation section  ======*/
+}
+@media only screen and (max-width: 768px) {
+  .custom-row {
+    margin: 0;
+    display: block;
+  }
+
+  /*============================================
+  =            media query for form            =
+  ============================================*/
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper {
+    margin-top: 15px;
+  }
+  .temp-custom-modal-wrap .temp-custom-modal-content .temp-custom-modal-body .temp-login-form-wrapper .temp-form-column-wrap-image .temp-form-inner-wrapper h2 {
+    -webkit-font-size: 32px;
+    -moz-font-size: 32px;
+    -ms-font-size: 32px;
+    font-size: 32px;
+  }
+
+  .temp-custom-navigation .temp-custom-logo-header .navbar-toggle {
+    border: 0 !important;
+  }
+  .temp-custom-navigation .temp-custom-logo-header .navbar-toggle:hover {
+    background-color: transparent;
+  }
+  .temp-custom-navigation .temp-custom-logo-header .navbar-toggle:focus {
+    background-color: transparent;
+  }
+  .temp-custom-navigation .navbar-collapse {
+    border: 0 !important;
+    box-shadow: none;
+  }
+
+  /*=====  End of media query for form  ======*/
+}
